@@ -1,0 +1,118 @@
+/* Variables de couleurs aristocratiques */
+:root {
+  --color-primary: #b95c4e; /* Bordeaux doux */
+  --color-secondary: #d4a373; /* Ocre rosé */
+  --color-accent: #f6f1ed; /* Beige clair */
+}
+
+/* Font families from Google Fonts */
+body {
+  font-family: 'Lora', serif;
+  background-color: var(--color-accent);
+  color: #4a4a4a;
+  line-height: 1.65;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headers */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+h2 {
+  border-left-style: solid;
+  border-left-width: 8px;
+  border-left-color: var(--color-secondary);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+/* Slideshow */
+#slideshow {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#slides {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+  width: 300%; /* 3 imagens = 300% */
+}
+
+#slides img {
+  width: 100%;
+  flex: 0 0 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Fade-in effect */
+.fade-in {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button styles */
+button {
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  user-select: none;
+}
+
+/* Scrollbar (webkit) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}

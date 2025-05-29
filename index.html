@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Blog élégant d'une semaine en Provence par Bernardo - nature, culture et gastronomie." />
+  <meta name="author" content="Bernardo" />
+  <meta name="theme-color" content="#b95c4e" />
+
+  <title>Blog de Vacances – Une semaine en Provence</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="selection:bg-pink-200 selection:text-pink-900">
+
+  <!-- Header -->
+  <header class="bg-primary text-accent py-16 text-center shadow-lg" style="background-color: var(--color-primary); color: var(--color-accent);">
+    <h1 class="text-5xl uppercase tracking-wide drop-shadow-md font-playfair">Blog de Vacances – Une semaine en Provence</h1>
+    <p class="italic mt-4 text-xl max-w-xl mx-auto font-light drop-shadow-sm">Bernardo vous invite à découvrir la beauté, la culture et la gastronomie du sud de la France.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="sticky top-0 bg-primary shadow-md z-50">
+    <ul class="flex justify-center space-x-12 py-4 text-accent font-semibold tracking-wider uppercase select-none" style="color: var(--color-accent);">
+      <li><a href="#nature" class="nav-link hover:text-secondary transition-colors">🌾 Nature</a></li>
+      <li><a href="#culture" class="nav-link hover:text-secondary transition-colors">🏛️ Culture</a></li>
+      <li><a href="#gastronomie" class="nav-link hover:text-secondary transition-colors">🧀 Gastronomie</a></li>
+      <li><a href="#conclusion" class="nav-link hover:text-secondary transition-colors">🎯 Conclusion</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- Section Nature -->
+    <section id="nature" class="fade-in mb-24">
+      <h2 class="text-4xl font-bold mb-6 border-l-8 border-secondary pl-4 text-primary">🌾 La Nature</h2>
+      <p class="mb-6 leading-relaxed text-lg text-justify text-gray-700">
+        Dès mon arrivée, j’ai été émerveillé par les paysages envoûtants de la Provence : champs de lavande parfumés, collines ondulantes et ciels d’un bleu infini.
+      </p>
+      <p class="mb-6 leading-relaxed text-lg text-justify text-gray-700">
+        J’ai parcouru le Plateau de Valensole où l’air était chargé de ce parfum unique. La randonnée dans le Luberon m’a offert un havre de paix et de beauté naturelle.
+      </p>
+
+      <!-- Slideshow -->
+      <div class="relative rounded-lg shadow-lg overflow-hidden">
+        <div id="slides" class="flex transition-transform duration-700 ease-in-out">
+          <img src="images/lavande_valensole.jpg" alt="Champs de lavande à Valensole" class="w-full flex-shrink-0 object-cover max-h-96" loading="lazy" />
+          <img src="images/luberon_paysage.jpg" alt="Paysage du Luberon" class="w-full flex-shrink-0 object-cover max-h-96" loading="lazy" />
+          <img src="images/provence_collines.jpg" alt="Collines en Provence" class="w-full flex-shrink-0 object-cover max-h-96" loading="lazy" />
+        </div>
+
+        <button id="prevBtn" aria-label="Image précédente" class="absolute top-1/2 left-2 -translate-y-1/2 bg-primary bg-opacity-75 text-accent rounded-full p-3 hover:bg-secondary transition">
+          ‹
+        </button>
+        <button id="nextBtn" aria-label="Image suivante" class="absolute top-1/2 right-2 -translate-y-1/2 bg-primary bg-opacity-75 text-accent rounded-full p-3 hover:bg-secondary transition">
+          ›
+        </button>
+      </div>
+    </section>
+
+    <!-- Section Culture -->
+    <section id="culture" class="fade-in mb-24">
+      <h2 class="text-4xl font-bold mb-6 border-l-8 border-secondary pl-4 text-primary">🏛️ La Culture</h2>
+      <p class="mb-6 leading-relaxed text-lg text-justify text-gray-700">
+        Les villages de Gordes et Roussillon dévoilent leur charme intemporel avec leurs maisons en pierre dorée et leurs ruelles pittoresques.
+      </p>
+      <p class="mb-6 leading-relaxed text-lg text-justify text-gray-700">
+        Sur les marchés locaux, l’artisanat, les herbes et les savons traditionnels capturent l’essence de cette région chaleureuse.
+      </p>
+      <img src="images/roussillon_village.png" alt="Village de Roussillon" class="w-full rounded-lg shadow-lg max-h-96 object-cover" loading="lazy" />
+    </section>
+
+    <!-- Section Gastronomie -->
+    <section id="gastronomie" class="fade-in mb-24">
+      <h2 class="text-4xl font-bold mb-6 border-l-8 border-secondary pl-4 text-primary">🧀 La Gastronomie</h2>
+      <p class="mb-6 leading-relaxed text-lg text-justify text-gray-700">
+        Chaque repas était un festin pour les sens. J’ai savouré la ratatouille traditionnelle, les olives du terroir, et le fromage de chèvre fondant.
+      </p>
+      <p class="mb-6 leading-relaxed text-lg text-justify text-gray-700">
+        En dessert, les calissons d’Aix-en-Provence, doux et délicats, sont devenus mes préférés. Une gourmandise à ne pas manquer !
+      </p>
+      <img src="images/calissons_aix.jpg" alt="Calissons d'Aix-en-Provence" class="w-64 rounded-lg shadow-md mx-auto" loading="lazy" />
+    </section>
+
+    <!-- Section Conclusion -->
+    <section id="conclusion" class="fade-in mb-12">
+      <h2 class="text-4xl font-bold mb-6 border-l-8 border-secondary pl-4 text-primary">🎯 Conclusion</h2>
+      <p class="mb-6 leading-relaxed text-lg text-justify text-gray-700">
+        Cette semaine en Provence restera gravée dans mon cœur pour toujours. La richesse de la nature, la chaleur des gens et les délices culinaires m’ont fait rêver d’y retourner.
+      </p>
+      <p class="mb-6 leading-relaxed text-lg text-justify text-gray-700">
+        Merci de m’avoir accompagné dans ce voyage. À très bientôt pour de nouvelles aventures.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-accent text-center py-8 mt-12" style="background-color: var(--color-primary); color: var(--color-accent);">
+    &copy; 2025 Bernardo - Blog de Vacances
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
